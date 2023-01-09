@@ -14,6 +14,7 @@
 		BC72B616296B9F5E00277CCB /* FancasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B615296B9F5E00277CCB /* FancasterTests.swift */; };
 		BC72B620296B9F5F00277CCB /* FancasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B61F296B9F5F00277CCB /* FancasterUITests.swift */; };
 		BC72B622296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */; };
+		BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B62E296BD0E600277CCB /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BC72B61B296B9F5F00277CCB /* FancasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC72B61F296B9F5F00277CCB /* FancasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterUITests.swift; sourceTree = "<group>"; };
 		BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC72B62E296BD0E600277CCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				BC72B606296B9F5B00277CCB /* ContentView.swift */,
 				BC72B608296B9F5E00277CCB /* Assets.xcassets */,
 				BC72B60A296B9F5E00277CCB /* Preview Content */,
+				BC72B62E296BD0E600277CCB /* LoginView.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */,
 				BC72B607296B9F5B00277CCB /* ContentView.swift in Sources */,
 				BC72B605296B9F5B00277CCB /* FancasterApp.swift in Sources */,
 			);
