@@ -7,13 +7,6 @@
 
     import SwiftUI
 
-
-
-
-
-
-
-
 struct ContentView: View {
     
     
@@ -24,7 +17,12 @@ struct ContentView: View {
     
     
     var body: some View {
-        LoginView()
+        NavigationView {
+            HomeView()
+            
+        }
+       
+       
     }
 }
     struct ContentView_Previews: PreviewProvider {

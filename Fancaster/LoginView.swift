@@ -8,12 +8,6 @@
 import SwiftUI
 
 
-
-
-
-
-
-
 struct LoginView: View {
 
 
@@ -79,30 +73,31 @@ var body: some View {
             .foregroundColor(emailFieldIsFocused ? .red : .blue)
         
         
-        
-        Button(action: {
-        print("Clicked")
-        }){
+        NavigationLink(destination: OtpView()) {
             
-            
-                    Text("LOGIN")
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 56)
-                        .font(.system(size: 18))
-                      
-                        .foregroundColor(.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color.white, lineWidth: 3)
+//            Button(action: {
+//                print("Clicked")
+//            }){
+                
+                
+                Text("LOGIN")
+                    .frame(minWidth: 300, maxWidth: 300, minHeight: 56)
+                    .font(.system(size: 18))
+                
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 50)
+                            .stroke(Color.white, lineWidth: 3)
                     )
-                }
-               // If you have this
-                .cornerRadius(50)
-       
-     
-                .padding([.horizontal], 56)
-        
-     
-        
+//            }
+//            // If you have this
+//            .cornerRadius(50)
+//
+//
+//            .padding([.horizontal], 56)
+            
+            
+        }
         
 
         Text("Don't have an account yet?")
@@ -113,6 +108,9 @@ var body: some View {
         
         
         
+        NavigationLink(destination: SignUpView()) {
+                       
+                      
         Button(action: {
         print("Clicked")
         }){
@@ -131,6 +129,7 @@ var body: some View {
        
      
                 .padding([.horizontal], 56)
+        }
     }
        
     
