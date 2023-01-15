@@ -99,6 +99,7 @@ var body: some View {
             
         }
         
+        
 
         Text("Don't have an account yet?")
             .foregroundColor(.white)

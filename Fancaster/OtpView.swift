@@ -100,9 +100,8 @@ Circle()
             
             
             
-            Button(action: {
-            print("validated")
-            }){
+            NavigationLink(destination: ChannelSelectionView()) {
+      
                 
                 ZStack{
                     Rectangle()

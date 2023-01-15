@@ -20,6 +20,10 @@
 		BCC1580229732D4B00CC0CB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580129732D4B00CC0CB9 /* SignUpView.swift */; };
 		BCC1580429732EDC00CC0CB9 /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580329732EDC00CC0CB9 /* WaitingView.swift */; };
 		BCC1580629734A9300CC0CB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580529734A9300CC0CB9 /* HomeView.swift */; };
+		BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */; };
+		BCC1580B29737BE200CC0CB9 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580A29737BE200CC0CB9 /* CheckView.swift */; };
+		BCC1580D29737C6600CC0CB9 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580C29737C6600CC0CB9 /* CheckListItem.swift */; };
+		BCC1580F29737CBE00CC0CB9 /* CheckListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580E29737CBE00CC0CB9 /* CheckListData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		BCC1580129732D4B00CC0CB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BCC1580329732EDC00CC0CB9 /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		BCC1580529734A9300CC0CB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionView.swift; sourceTree = "<group>"; };
+		BCC1580A29737BE200CC0CB9 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		BCC1580C29737C6600CC0CB9 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
+		BCC1580E29737CBE00CC0CB9 /* CheckListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		BC72B603296B9F5B00277CCB /* Fancaster */ = {
 			isa = PBXGroup;
 			children = (
+				BCC1580929737BCD00CC0CB9 /* components */,
 				BCC157FF29731CF000CC0CB9 /* OtpViewModel.swift */,
 				BC72B604296B9F5B00277CCB /* FancasterApp.swift */,
 				BC72B606296B9F5B00277CCB /* ContentView.swift */,
@@ -116,6 +125,7 @@
 				BCC1580129732D4B00CC0CB9 /* SignUpView.swift */,
 				BCC1580329732EDC00CC0CB9 /* WaitingView.swift */,
 				BCC1580529734A9300CC0CB9 /* HomeView.swift */,
+				BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -143,6 +153,16 @@
 				BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */,
 			);
 			path = FancasterUITests;
+			sourceTree = "<group>";
+		};
+		BCC1580929737BCD00CC0CB9 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				BCC1580A29737BE200CC0CB9 /* CheckView.swift */,
+				BCC1580C29737C6600CC0CB9 /* CheckListItem.swift */,
+				BCC1580E29737CBE00CC0CB9 /* CheckListData.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,12 +297,16 @@
 			files = (
 				BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */,
 				BC72B607296B9F5B00277CCB /* ContentView.swift in Sources */,
+				BCC1580D29737C6600CC0CB9 /* CheckListItem.swift in Sources */,
 				BCC1580429732EDC00CC0CB9 /* WaitingView.swift in Sources */,
 				BCC1580029731CF000CC0CB9 /* OtpViewModel.swift in Sources */,
 				BCC157FE2972739900CC0CB9 /* OtpView.swift in Sources */,
 				BCC1580629734A9300CC0CB9 /* HomeView.swift in Sources */,
+				BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */,
 				BCC1580229732D4B00CC0CB9 /* SignUpView.swift in Sources */,
 				BC72B605296B9F5B00277CCB /* FancasterApp.swift in Sources */,
+				BCC1580F29737CBE00CC0CB9 /* CheckListData.swift in Sources */,
+				BCC1580B29737BE200CC0CB9 /* CheckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

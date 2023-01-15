@@ -10,17 +10,19 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack{
-            
             Image("header_home")
-                .resizable()
-                .scaledToFill()
+                    .resizable()
+                   
+                    .scaledToFill()
+                
+                    .ignoresSafeArea()
+                
+     
             
-                .ignoresSafeArea()
-            
-            
-           VStack{
+            VStack(alignment: .leading){
+
               
-               ZStack(){
+               ZStack{
                         Circle()
                             .fill(.black)
                             .opacity(0.4)
@@ -28,11 +30,10 @@ struct HomeView: View {
                         Image("hamburger_icon")
                             .resizable()
                             .frame(width: 40, height :40,  alignment: .leading)
-                        
-                            
+
+
                     }
-             
-       
+               .offset(x:220)
              
             
                ZStack{
