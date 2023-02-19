@@ -5,7 +5,8 @@
     //  Created by Ankit Mhatre on 1/8/23.
     //
 
-    import SwiftUI
+import SwiftUI
+import UIKit
 
 struct ContentView: View {
     
@@ -17,16 +18,33 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationView {
-            LoginView()
-            
-        }
-       
-       
-    }
+   
+          NavigationView {
+              LoginView()
+
+          }
+         
+         
+      }
 }
     struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+             ContentView()
     }
     }
+
+
+struct storyboardview: UIViewControllerRepresentable{
+    
+    
+    func makeUIViewController(context content: Context) ->  UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let controller = storyboard.instantiateViewController(identifier  : "Home")
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+    }
+    
+}

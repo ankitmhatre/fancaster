@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ChannelSelectionView: View {
-
+    @State private var isOn = false
     
     var body: some View {
         
@@ -17,8 +17,10 @@ struct ChannelSelectionView: View {
         
         
         
-        
         ZStack{
+            
+            
+            
             VStack(alignment: .leading){
                 
                 HStack{
@@ -38,6 +40,7 @@ struct ChannelSelectionView: View {
                     
                 }
                 
+                
                 Text("Select where to broadcast")
                     .foregroundColor(Color("violet"))
                     .font(.system(size: 18))
@@ -45,18 +48,23 @@ struct ChannelSelectionView: View {
                 
                 
                 
-                
-                
-                
-                
-                List(checkListData){ item in
-                    
-                    CheckView(isChecked: item.isChecked, title: item.title)
+                List(checkListData){item in
+                    Toggle(item.title, isOn : $isOn)
+                          
+
                 }
-                .font(.title)
                 
                 
-                .background(.clear)
+                
+                
+                
+//                List(checkListData){ item in
+//                    
+//                    CheckV(isChecked: item.isChecked, title: item.title)
+//                    
+//                }
+//                .font(.title)
+                
                 
                 
                 
@@ -82,27 +90,33 @@ struct ChannelSelectionView: View {
                     .offset(y: 500)
                 
                 VStack{
-              
-                    
-             
                     
                     
-                    ZStack{
-                        Circle()
-                            .fill(
-                                Color("violet")
-                            )
-                        
-                            .frame(width: 120, height: 120)
-                        
-                        
-                        Image("play_button")
-                            .resizable()
-                            .frame(width: 60, height: 80)
-                        
-                        
+                    
+                    
+                    
+                    NavigationLink(  destination:  storyboardview().edgesIgnoringSafeArea(.all)){
+                        ZStack{
+                            Circle()
+                                .fill(
+                                    Color("violet")
+                                )
+                            
+                                .frame(width: 120, height: 120)
+                            
+                            
+                            
+                            
+                            
+                            //   storyboardview().edgesIgnoringSafeArea(.all)
+                            Image("play_button")
+                                .resizable()
+                                .frame(width: 60, height: 80)
+                            
+                            
+                        }
+                        .offset(y:-50)
                     }
-                    .offset(y:-50)
                     Text("Go Live !")
                         .font(.system(size: 36))
                         .foregroundColor(.white)
@@ -113,6 +127,7 @@ struct ChannelSelectionView: View {
                 
                 
             }
+            
             .padding([.horizontal], -40)
         }
         

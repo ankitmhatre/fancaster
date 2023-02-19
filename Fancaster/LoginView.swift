@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 
 struct LoginView: View {
@@ -16,7 +17,7 @@ let backgroundGradient = LinearGradient(
     startPoint: .top, endPoint: .bottom)
 
 
-@State private var phoneNumber = ""
+@State private var phoneNumber = "+19173196399"
 @State private var username: String = ""
 @FocusState private var emailFieldIsFocused: Bool
 
@@ -45,7 +46,7 @@ var body: some View {
         
         TextField(
             "Phone number",
-            text: $username
+            text: $phoneNumber
         )
         .keyboardType(.phonePad)
         .submitLabel(.return)
@@ -75,6 +76,8 @@ var body: some View {
         
         NavigationLink(destination: OtpView()) {
             
+            
+            
 //            Button(action: {
 //                print("Clicked")
 //            }){
@@ -89,6 +92,27 @@ var body: some View {
                         RoundedRectangle(cornerRadius: 50)
                             .stroke(Color.white, lineWidth: 3)
                     )
+                    .onTapGesture {
+                        
+//                        PhoneAuthProvider.provider()
+//                          .verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
+//                              if let error = error {
+//                                print(error.localizedDescription)
+//
+//                                return
+//                              }
+//                              print("Verification ID")
+//                              print(verificationID)
+//                              UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+//                              //NavigationLink(destination: OtpView())
+//
+//                              // Sign in using the verificationID and the code sent to the user
+//                              // ...
+//                          }
+
+                        
+                     
+                    }
 //            }
 //            // If you have this
 //            .cornerRadius(50)
@@ -112,9 +136,7 @@ var body: some View {
         NavigationLink(destination: SignUpView()) {
                        
                       
-        Button(action: {
-        print("Clicked")
-        }){
+     
             
             
                     Text("SIGNUP")
@@ -131,11 +153,12 @@ var body: some View {
      
                 .padding([.horizontal], 56)
         }
+    .background(Color("login_color_top"))
     }
        
     
-.background(Color("login_color_top"))
-}
+
+
     
 }
 

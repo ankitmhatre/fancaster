@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+
 
 struct OtpView: View {
     
@@ -120,7 +122,12 @@ Circle()
                         .font(.system(size: 18))
                         .fontWeight(.black)
                      
-                        .foregroundColor(.white)
+                        .foregroundColor(.white).onTapGesture {
+                            let verificationID = UserDefaults.standard.string(forKey: "authVerificationID")
+//                            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: "000000")
+                            
+           
+                        }
                         
                 }
                         

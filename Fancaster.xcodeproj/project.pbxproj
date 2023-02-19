@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4A1AA1299D88C4006BFC05 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9B299D88C3006BFC05 /* Utilities.swift */; };
+		BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9C299D88C3006BFC05 /* PiPMixer.metal */; };
+		BC4A1AA3299D88C4006BFC05 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9D299D88C3006BFC05 /* CameraViewController.swift */; };
+		BC4A1AA4299D88C4006BFC05 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9E299D88C4006BFC05 /* PreviewView.swift */; };
+		BC4A1AA5299D88C4006BFC05 /* PiPVideoMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9F299D88C4006BFC05 /* PiPVideoMixer.swift */; };
+		BC4A1AA6299D88C4006BFC05 /* MovieRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1AA0299D88C4006BFC05 /* MovieRecorder.swift */; };
 		BC72B605296B9F5B00277CCB /* FancasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B604296B9F5B00277CCB /* FancasterApp.swift */; };
 		BC72B607296B9F5B00277CCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B606296B9F5B00277CCB /* ContentView.swift */; };
 		BC72B609296B9F5E00277CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC72B608296B9F5E00277CCB /* Assets.xcassets */; };
@@ -15,15 +21,25 @@
 		BC72B620296B9F5F00277CCB /* FancasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B61F296B9F5F00277CCB /* FancasterUITests.swift */; };
 		BC72B622296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */; };
 		BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B62E296BD0E600277CCB /* LoginView.swift */; };
+		BCB5DDC52996A05100A03BAE /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB5DDC42996A05100A03BAE /* FrameView.swift */; };
+		BCBCB1C329A28F1D00530138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4A1AAB299D8A0B006BFC05 /* Main.storyboard */; };
+		BCBCB1C529A291AC00530138 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBCB1C429A291AB00530138 /* GoogleService-Info.plist */; };
+		BCBCB1C829A2927E00530138 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1C729A2927E00530138 /* FirebaseAnalytics */; };
+		BCBCB1CA29A2927E00530138 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1C929A2927E00530138 /* FirebaseAnalyticsOnDeviceConversion */; };
+		BCBCB1CC29A2927E00530138 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1CB29A2927E00530138 /* FirebaseAnalyticsSwift */; };
+		BCBCB1CE29A2927E00530138 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1CD29A2927E00530138 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		BCBCB1D029A2927E00530138 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1CF29A2927E00530138 /* FirebaseAppDistribution-Beta */; };
+		BCBCB1D229A2927E00530138 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1D129A2927E00530138 /* FirebaseAuth */; };
+		BCBCB1D429A2927E00530138 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1D329A2927E00530138 /* FirebaseCrashlytics */; };
+		BCBCB1D629A292AA00530138 /* CheckListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCB1D529A292AA00530138 /* CheckListData.swift */; };
+		BCBCB1D829A292D600530138 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCB1D729A292D600530138 /* CheckListItem.swift */; };
+		BCBCB1F229A2B4EE00530138 /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = BCBCB1F129A2B4EE00530138 /* SwiftUIRouter */; };
 		BCC157FE2972739900CC0CB9 /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC157FD2972739900CC0CB9 /* OtpView.swift */; };
 		BCC1580029731CF000CC0CB9 /* OtpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC157FF29731CF000CC0CB9 /* OtpViewModel.swift */; };
 		BCC1580229732D4B00CC0CB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580129732D4B00CC0CB9 /* SignUpView.swift */; };
 		BCC1580429732EDC00CC0CB9 /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580329732EDC00CC0CB9 /* WaitingView.swift */; };
 		BCC1580629734A9300CC0CB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580529734A9300CC0CB9 /* HomeView.swift */; };
 		BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */; };
-		BCC1580B29737BE200CC0CB9 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580A29737BE200CC0CB9 /* CheckView.swift */; };
-		BCC1580D29737C6600CC0CB9 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580C29737C6600CC0CB9 /* CheckListItem.swift */; };
-		BCC1580F29737CBE00CC0CB9 /* CheckListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580E29737CBE00CC0CB9 /* CheckListData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC4A1A96299D8134006BFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BC4A1A9B299D88C3006BFC05 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		BC4A1A9C299D88C3006BFC05 /* PiPMixer.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PiPMixer.metal; sourceTree = "<group>"; };
+		BC4A1A9D299D88C3006BFC05 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		BC4A1A9E299D88C4006BFC05 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		BC4A1A9F299D88C4006BFC05 /* PiPVideoMixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiPVideoMixer.swift; sourceTree = "<group>"; };
+		BC4A1AA0299D88C4006BFC05 /* MovieRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRecorder.swift; sourceTree = "<group>"; };
+		BC4A1AAB299D8A0B006BFC05 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BC72B601296B9F5B00277CCB /* Fancaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC72B604296B9F5B00277CCB /* FancasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterApp.swift; sourceTree = "<group>"; };
 		BC72B606296B9F5B00277CCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,15 +79,17 @@
 		BC72B61F296B9F5F00277CCB /* FancasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterUITests.swift; sourceTree = "<group>"; };
 		BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BC72B62E296BD0E600277CCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BCB5DDC42996A05100A03BAE /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		BCBCB1C429A291AB00530138 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCBCB1D529A292AA00530138 /* CheckListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListData.swift; sourceTree = "<group>"; };
+		BCBCB1D729A292D600530138 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
+		BCBCB1D929A29A0F00530138 /* Fancaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fancaster.entitlements; sourceTree = "<group>"; };
 		BCC157FD2972739900CC0CB9 /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
 		BCC157FF29731CF000CC0CB9 /* OtpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewModel.swift; sourceTree = "<group>"; };
 		BCC1580129732D4B00CC0CB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BCC1580329732EDC00CC0CB9 /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		BCC1580529734A9300CC0CB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionView.swift; sourceTree = "<group>"; };
-		BCC1580A29737BE200CC0CB9 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
-		BCC1580C29737C6600CC0CB9 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
-		BCC1580E29737CBE00CC0CB9 /* CheckListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBCB1CC29A2927E00530138 /* FirebaseAnalyticsSwift in Frameworks */,
+				BCBCB1F229A2B4EE00530138 /* SwiftUIRouter in Frameworks */,
+				BCBCB1D229A2927E00530138 /* FirebaseAuth in Frameworks */,
+				BCBCB1C829A2927E00530138 /* FirebaseAnalytics in Frameworks */,
+				BCBCB1D429A2927E00530138 /* FirebaseCrashlytics in Frameworks */,
+				BCBCB1D029A2927E00530138 /* FirebaseAppDistribution-Beta in Frameworks */,
+				BCBCB1CA29A2927E00530138 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				BCBCB1CE29A2927E00530138 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +125,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC4A1AAE299D8CC6006BFC05 /* Storyboardfiles */ = {
+			isa = PBXGroup;
+			children = (
+				BC4A1AAB299D8A0B006BFC05 /* Main.storyboard */,
+			);
+			path = Storyboardfiles;
+			sourceTree = "<group>";
+		};
 		BC72B5F8296B9F5B00277CCB = {
 			isa = PBXGroup;
 			children = (
+				BCB5DDC42996A05100A03BAE /* FrameView.swift */,
 				BC72B603296B9F5B00277CCB /* Fancaster */,
 				BC72B614296B9F5E00277CCB /* FancasterTests */,
 				BC72B61E296B9F5F00277CCB /* FancasterUITests */,
@@ -114,7 +157,16 @@
 		BC72B603296B9F5B00277CCB /* Fancaster */ = {
 			isa = PBXGroup;
 			children = (
-				BCC1580929737BCD00CC0CB9 /* components */,
+				BCBCB1D929A29A0F00530138 /* Fancaster.entitlements */,
+				BCBCB1C429A291AB00530138 /* GoogleService-Info.plist */,
+				BC4A1AAE299D8CC6006BFC05 /* Storyboardfiles */,
+				BC4A1A96299D8134006BFC05 /* Info.plist */,
+				BC4A1A9D299D88C3006BFC05 /* CameraViewController.swift */,
+				BC4A1AA0299D88C4006BFC05 /* MovieRecorder.swift */,
+				BC4A1A9C299D88C3006BFC05 /* PiPMixer.metal */,
+				BC4A1A9F299D88C4006BFC05 /* PiPVideoMixer.swift */,
+				BC4A1A9E299D88C4006BFC05 /* PreviewView.swift */,
+				BC4A1A9B299D88C3006BFC05 /* Utilities.swift */,
 				BCC157FF29731CF000CC0CB9 /* OtpViewModel.swift */,
 				BC72B604296B9F5B00277CCB /* FancasterApp.swift */,
 				BC72B606296B9F5B00277CCB /* ContentView.swift */,
@@ -126,6 +178,8 @@
 				BCC1580329732EDC00CC0CB9 /* WaitingView.swift */,
 				BCC1580529734A9300CC0CB9 /* HomeView.swift */,
 				BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */,
+				BCBCB1D529A292AA00530138 /* CheckListData.swift */,
+				BCBCB1D729A292D600530138 /* CheckListItem.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -155,16 +209,6 @@
 			path = FancasterUITests;
 			sourceTree = "<group>";
 		};
-		BCC1580929737BCD00CC0CB9 /* components */ = {
-			isa = PBXGroup;
-			children = (
-				BCC1580A29737BE200CC0CB9 /* CheckView.swift */,
-				BCC1580C29737C6600CC0CB9 /* CheckListItem.swift */,
-				BCC1580E29737CBE00CC0CB9 /* CheckListData.swift */,
-			);
-			path = components;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,6 +225,16 @@
 			dependencies = (
 			);
 			name = Fancaster;
+			packageProductDependencies = (
+				BCBCB1C729A2927E00530138 /* FirebaseAnalytics */,
+				BCBCB1C929A2927E00530138 /* FirebaseAnalyticsOnDeviceConversion */,
+				BCBCB1CB29A2927E00530138 /* FirebaseAnalyticsSwift */,
+				BCBCB1CD29A2927E00530138 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				BCBCB1CF29A2927E00530138 /* FirebaseAppDistribution-Beta */,
+				BCBCB1D129A2927E00530138 /* FirebaseAuth */,
+				BCBCB1D329A2927E00530138 /* FirebaseCrashlytics */,
+				BCBCB1F129A2B4EE00530138 /* SwiftUIRouter */,
+			);
 			productName = Fancaster;
 			productReference = BC72B601296B9F5B00277CCB /* Fancaster.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +307,10 @@
 				Base,
 			);
 			mainGroup = BC72B5F8296B9F5B00277CCB;
+			packageReferences = (
+				BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BCBCB1F029A2B4EE00530138 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */,
+			);
 			productRefGroup = BC72B602296B9F5B00277CCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC72B60C296B9F5E00277CCB /* Preview Assets.xcassets in Resources */,
+				BCBCB1C529A291AC00530138 /* GoogleService-Info.plist in Resources */,
 				BC72B609296B9F5E00277CCB /* Assets.xcassets in Resources */,
+				BCBCB1C329A28F1D00530138 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,16 +357,22 @@
 			files = (
 				BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */,
 				BC72B607296B9F5B00277CCB /* ContentView.swift in Sources */,
-				BCC1580D29737C6600CC0CB9 /* CheckListItem.swift in Sources */,
+				BC4A1AA5299D88C4006BFC05 /* PiPVideoMixer.swift in Sources */,
+				BCBCB1D829A292D600530138 /* CheckListItem.swift in Sources */,
+				BC4A1AA3299D88C4006BFC05 /* CameraViewController.swift in Sources */,
 				BCC1580429732EDC00CC0CB9 /* WaitingView.swift in Sources */,
 				BCC1580029731CF000CC0CB9 /* OtpViewModel.swift in Sources */,
 				BCC157FE2972739900CC0CB9 /* OtpView.swift in Sources */,
+				BC4A1AA6299D88C4006BFC05 /* MovieRecorder.swift in Sources */,
+				BCBCB1D629A292AA00530138 /* CheckListData.swift in Sources */,
 				BCC1580629734A9300CC0CB9 /* HomeView.swift in Sources */,
+				BC4A1AA1299D88C4006BFC05 /* Utilities.swift in Sources */,
 				BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */,
 				BCC1580229732D4B00CC0CB9 /* SignUpView.swift in Sources */,
 				BC72B605296B9F5B00277CCB /* FancasterApp.swift in Sources */,
-				BCC1580F29737CBE00CC0CB9 /* CheckListData.swift in Sources */,
-				BCC1580B29737BE200CC0CB9 /* CheckView.swift in Sources */,
+				BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */,
+				BC4A1AA4299D88C4006BFC05 /* PreviewView.swift in Sources */,
+				BCB5DDC52996A05100A03BAE /* FrameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,23 +528,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Fancaster/Preview Content\"";
-				DEVELOPMENT_TEAM = 95H8772G6W;
+				DEVELOPMENT_TEAM = 2X8VP8NDHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fancaster/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to test";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Microphone ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need access to photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.1337labs.Fancaster;
+				MARKETING_VERSION = 2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetandavdra.fancaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -491,23 +563,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Fancaster/Preview Content\"";
-				DEVELOPMENT_TEAM = 95H8772G6W;
+				DEVELOPMENT_TEAM = 2X8VP8NDHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fancaster/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to test";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Microphone ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need access to photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.1337labs.Fancaster;
+				MARKETING_VERSION = 2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetandavdra.fancaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -631,6 +709,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		BCBCB1F029A2B4EE00530138 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/SwiftUIRouter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCBCB1C729A2927E00530138 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BCBCB1C929A2927E00530138 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		BCBCB1CB29A2927E00530138 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		BCBCB1CD29A2927E00530138 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		BCBCB1CF29A2927E00530138 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		BCBCB1D129A2927E00530138 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BCBCB1D329A2927E00530138 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1C629A2927E00530138 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		BCBCB1F129A2B4EE00530138 /* SwiftUIRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCBCB1F029A2B4EE00530138 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
+			productName = SwiftUIRouter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC72B5F9296B9F5B00277CCB /* Project object */;
 }
