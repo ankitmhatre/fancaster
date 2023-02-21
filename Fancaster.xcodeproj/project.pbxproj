@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC34831C29A57565005DA547 /* TransitionScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34831B29A57565005DA547 /* TransitionScreenView.swift */; };
 		BC4A1AA1299D88C4006BFC05 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9B299D88C3006BFC05 /* Utilities.swift */; };
 		BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9C299D88C3006BFC05 /* PiPMixer.metal */; };
 		BC4A1AA3299D88C4006BFC05 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9D299D88C3006BFC05 /* CameraViewController.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC34831B29A57565005DA547 /* TransitionScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionScreenView.swift; sourceTree = "<group>"; };
 		BC4A1A96299D8134006BFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC4A1A9B299D88C3006BFC05 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		BC4A1A9C299D88C3006BFC05 /* PiPMixer.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PiPMixer.metal; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */,
 				BCBCB1D529A292AA00530138 /* CheckListData.swift */,
 				BCBCB1D729A292D600530138 /* CheckListItem.swift */,
+				BC34831B29A57565005DA547 /* TransitionScreenView.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				BC4A1AA1299D88C4006BFC05 /* Utilities.swift in Sources */,
 				BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */,
 				BCC1580229732D4B00CC0CB9 /* SignUpView.swift in Sources */,
+				BC34831C29A57565005DA547 /* TransitionScreenView.swift in Sources */,
 				BC72B605296B9F5B00277CCB /* FancasterApp.swift in Sources */,
 				BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */,
 				BC4A1AA4299D88C4006BFC05 /* PreviewView.swift in Sources */,
@@ -530,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Fancaster/Preview Content\"";
 				DEVELOPMENT_TEAM = 2X8VP8NDHU;
 				ENABLE_PREVIEWS = YES;
@@ -549,7 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chetandavdra.fancaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -565,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Fancaster/Preview Content\"";
 				DEVELOPMENT_TEAM = 2X8VP8NDHU;
 				ENABLE_PREVIEWS = YES;
@@ -584,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chetandavdra.fancaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

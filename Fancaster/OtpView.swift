@@ -29,38 +29,48 @@ struct OtpView: View {
     @State private var username: String = ""
     @FocusState private var emailFieldIsFocused: Bool
 
+    let backgroundGradient =  LinearGradient(gradient: Gradient(colors: [Color("blue_header_bg_light"), Color("blue_header_bg_dark")]), startPoint: .top, endPoint: .bottom)
+    
+    
     var body: some View {
         ZStack{
             
-            LinearGradient(gradient: Gradient(colors: [Color("magenta"), Color("gradient_blue")]), startPoint: .bottom, endPoint: .top)
-Circle()
-                .fill(Color("violet"))
-                .offset(y: -500)
-                .frame(width: 800, height: 800)
+            backgroundGradient
             
+            
+            VStack {
+                ZStack{
+                    Image("login_header_board_dark_blue")
+                        .imageScale(.large)
+                        .foregroundColor(.accentColor)
+                    
+                    VStack {
+                        
+                        
+                        
+                        Image("fancaster_white_text")
+                            
+                            .resizable()
+                            .frame(width: 280.0, height: 48)
+                            .padding(EdgeInsets.init(top: 20, leading: 0, bottom: 0, trailing: 0))
+                            .imageScale(.medium)
+                        
+                        Text("Enter sent code")
+                            .bold()
+                            .foregroundColor(.white)
+                            .font(.system(size:36))
+                        
+                        
+                        
+                    }
+                    
+               
+                    
+                    
+                }
+                .padding(EdgeInsets.init(top: 0, leading: 0, bottom: 20, trailing: 0))
                 
-  
-        VStack {
-        
-            Spacer()
-                    .frame(height: 80)
-            VStack{
-                Image("fancaster_logo")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Enter sent code")
-                    .bold()
-                    .foregroundColor(.white)
-                    .font(.system(size:36))
-            }
-            .padding(EdgeInsets(top: 72, leading: 0, bottom: 0, trailing: 0))
-            
-            
-            Spacer()
-          
-            
-            
-            
+                Spacer()
             ZStack {
                                   
                                   HStack (spacing: spaceBetweenBoxes){
@@ -79,30 +89,20 @@ Circle()
                                   .textContentType(.oneTimeCode)
                                   .foregroundColor(.clear)
                                   .accentColor(.clear)
-                                  .background(Color.clear)
+                                  .background(Color.clear).scrollDismissesKeyboard(.immediately)
                                   .keyboardType(.numberPad)
+                                  
+                                  
                               }
        
+        
             
-            Text(username)
-                .foregroundColor(emailFieldIsFocused ? .red : .blue)
-            
-            
-            
-         
-         
-            
-    
-
-            Text("Entered a wrong number?")
-                .foregroundColor(.white)
-                .padding([.vertical], 12)
-                .fontWeight(.semibold)
+ 
             
             
             
             
-            NavigationLink(destination: ChannelSelectionView()) {
+            NavigationLink(destination: TransitionScreenView()) {
       
                 
                 ZStack{
@@ -122,7 +122,8 @@ Circle()
                         .font(.system(size: 18))
                         .fontWeight(.black)
                      
-                        .foregroundColor(.white).onTapGesture {
+                        .foregroundColor(.white)
+                        .onTapGesture {
                             let verificationID = UserDefaults.standard.string(forKey: "authVerificationID")
 //                            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: "000000")
                             
@@ -130,12 +131,14 @@ Circle()
                         }
                         
                 }
+                .padding(EdgeInsets.init(top: 70, leading: 0, bottom: 0, trailing: 0))
+               
                         
                     }
                    // If you have this
                     
          
-                    .padding([.horizontal], 56)
+                   
             
             Spacer()
                 
