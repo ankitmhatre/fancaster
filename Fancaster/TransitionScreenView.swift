@@ -44,7 +44,7 @@ struct TransitionScreenView: View {
             Image("rotation_icon")
                 .imageScale(.large)
                 .padding([.horizontal], 100)
-            NavigationLink(destination: ChannelSelectionView()) {
+            NavigationLink(destination:     HomeView()) {
                 
                 Image("transition_logo_icon")
                     .imageScale(.large)

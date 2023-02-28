@@ -41,6 +41,8 @@
 		BCC1580429732EDC00CC0CB9 /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580329732EDC00CC0CB9 /* WaitingView.swift */; };
 		BCC1580629734A9300CC0CB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1580529734A9300CC0CB9 /* HomeView.swift */; };
 		BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */; };
+		BCE5A18529AD53B80058086D /* WaitingForConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5A18429AD53B70058086D /* WaitingForConnection.swift */; };
+		BCF4B6B629AE88D90008014C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4B6B529AE88D90008014C /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		BCC1580329732EDC00CC0CB9 /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		BCC1580529734A9300CC0CB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionView.swift; sourceTree = "<group>"; };
+		BCE5A18429AD53B70058086D /* WaitingForConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForConnection.swift; sourceTree = "<group>"; };
+		BCF4B6B529AE88D90008014C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 				BCBCB1D529A292AA00530138 /* CheckListData.swift */,
 				BCBCB1D729A292D600530138 /* CheckListItem.swift */,
 				BC34831B29A57565005DA547 /* TransitionScreenView.swift */,
+				BCE5A18429AD53B70058086D /* WaitingForConnection.swift */,
+				BCF4B6B529AE88D90008014C /* MenuView.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -361,9 +367,11 @@
 				BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */,
 				BC72B607296B9F5B00277CCB /* ContentView.swift in Sources */,
 				BC4A1AA5299D88C4006BFC05 /* PiPVideoMixer.swift in Sources */,
+				BCE5A18529AD53B80058086D /* WaitingForConnection.swift in Sources */,
 				BCBCB1D829A292D600530138 /* CheckListItem.swift in Sources */,
 				BC4A1AA3299D88C4006BFC05 /* CameraViewController.swift in Sources */,
 				BCC1580429732EDC00CC0CB9 /* WaitingView.swift in Sources */,
+				BCF4B6B629AE88D90008014C /* MenuView.swift in Sources */,
 				BCC1580029731CF000CC0CB9 /* OtpViewModel.swift in Sources */,
 				BCC157FE2972739900CC0CB9 /* OtpView.swift in Sources */,
 				BC4A1AA6299D88C4006BFC05 /* MovieRecorder.swift in Sources */,
