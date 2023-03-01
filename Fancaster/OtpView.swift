@@ -25,9 +25,9 @@ struct OtpView: View {
     
    
 
-    @State private var phoneNumber = ""
-    @State private var username: String = ""
-    @FocusState private var emailFieldIsFocused: Bool
+
+
+
 
     let backgroundGradient =  LinearGradient(gradient: Gradient(colors: [Color("blue_header_bg_light"), Color("blue_header_bg_dark")]), startPoint: .top, endPoint: .bottom)
     
@@ -79,6 +79,8 @@ struct OtpView: View {
                                       otpText(text: viewModel.otp2)
                                       otpText(text: viewModel.otp3)
                                       otpText(text: viewModel.otp4)
+                                      otpText(text: viewModel.otp5)
+                                      otpText(text: viewModel.otp6)
                                    
                                   }
                                   
@@ -86,6 +88,7 @@ struct OtpView: View {
                                   TextField("", text: $viewModel.otpField)
                                   .frame(width: isFocused ? 0 : textFieldOriginalWidth, height: textBoxHeight)
                                   .disabled(viewModel.isTextFieldDisabled)
+                            
                                   .textContentType(.oneTimeCode)
                                   .foregroundColor(.clear)
                                   .accentColor(.clear)
@@ -103,37 +106,58 @@ struct OtpView: View {
             
             
             NavigationLink(destination: TransitionScreenView()) {
-      
                 
-                ZStack{
-                    Rectangle()
-                        .fill(.black)
-                .frame(minWidth: 0, maxWidth: 300, minHeight: 56, maxHeight: 56)
-            
-                .cornerRadius(50)
-       
-               
-                        .opacity(0.3)
+                Button(action:{
                     
-                    Text("VALIDATE")
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 56, maxHeight: 56)
                     
-            
-                        .font(.system(size: 18))
-                        .fontWeight(.black)
-                     
-                        .foregroundColor(.white)
-                        .onTapGesture {
-                            let verificationID = UserDefaults.standard.string(forKey: "authVerificationID")
-//                            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: "000000")
-                            
-           
-                        }
+                    
+                    let authVerificationID =   UserDefaults.standard.string(forKey: "authVerificationID")
+                    print(authVerificationID)
+                    
+                    let credential =  PhoneAuthProvider.provider().credential(withVerificationID: authVerificationID ?? "<no_name>", verificationCode: viewModel.otpField)
+                    
+                                    
+                                    Auth.auth().signIn(with: credential) { (res, err) in
+
+                                        if err != nil{
+                                            print(err?.localizedDescription)
+//                                            self.msg = (err?.localizedDescription)!
+//                                            self.alert.toggle()
+//                                            return
+                                        }
+
+                                        print(res?.user.uid)
+                                        UserDefaults.standard.set(true, forKey: "status")
+
+                                        NotificationCenter.default.post(name: NSNotification.Name("statusChange"), object: nil)
+                                    }
+                })
+                {
+                    
+                    ZStack{
+                        Rectangle()
+                            .fill(.black)
+                            .frame(minWidth: 0, maxWidth: 300, minHeight: 56, maxHeight: 56)
                         
+                            .cornerRadius(50)
+                        
+                        
+                            .opacity(0.3)
+                        
+                        Text("VALIDATE")
+                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 56, maxHeight: 56)
+                        
+                        
+                            .font(.system(size: 18))
+                            .fontWeight(.black)
+                        
+                            .foregroundColor(.white)
+                        
+                        
+                    }
+                    .padding(EdgeInsets.init(top: 70, leading: 0, bottom: 0, trailing: 0))
+                    
                 }
-                .padding(EdgeInsets.init(top: 70, leading: 0, bottom: 0, trailing: 0))
-               
-                        
                     }
                    // If you have this
                     
@@ -145,12 +169,15 @@ struct OtpView: View {
         }
            
         
-    
+            .onTapGesture {
+                        hideKeyboard()
+                }
        
        
         }
         .ignoresSafeArea()
     }
+        
     private func otpText(text: String) -> some View {
            
            return Text(text)
@@ -175,3 +202,11 @@ struct OtpView: View {
     }
     }
 
+
+
+extension View {
+    func hideKeyboard() {
+        let resign = #selector(UIResponder.resignFirstResponder)
+        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
+    }
+}

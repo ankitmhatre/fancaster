@@ -43,6 +43,9 @@
 		BCC158082973781F00CC0CB9 /* ChannelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */; };
 		BCE5A18529AD53B80058086D /* WaitingForConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5A18429AD53B70058086D /* WaitingForConnection.swift */; };
 		BCF4B6B629AE88D90008014C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4B6B529AE88D90008014C /* MenuView.swift */; };
+		BCF4B6B829AEC7B60008014C /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF4B6B729AEC7B60008014C /* Splash.storyboard */; };
+		BCF4B6BA29AEC8350008014C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4B6B929AEC8350008014C /* SplashViewController.swift */; };
+		BCF4B6BC29AED4740008014C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4B6BB29AED4740008014C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,9 @@
 		BCC158072973781F00CC0CB9 /* ChannelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionView.swift; sourceTree = "<group>"; };
 		BCE5A18429AD53B70058086D /* WaitingForConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForConnection.swift; sourceTree = "<group>"; };
 		BCF4B6B529AE88D90008014C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BCF4B6B729AEC7B60008014C /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		BCF4B6B929AEC8350008014C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		BCF4B6BB29AED4740008014C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4A1AAB299D8A0B006BFC05 /* Main.storyboard */,
+				BCF4B6B729AEC7B60008014C /* Splash.storyboard */,
 			);
 			path = Storyboardfiles;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 				BC34831B29A57565005DA547 /* TransitionScreenView.swift */,
 				BCE5A18429AD53B70058086D /* WaitingForConnection.swift */,
 				BCF4B6B529AE88D90008014C /* MenuView.swift */,
+				BCF4B6B929AEC8350008014C /* SplashViewController.swift */,
+				BCF4B6BB29AED4740008014C /* User.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				BC72B60C296B9F5E00277CCB /* Preview Assets.xcassets in Resources */,
 				BCBCB1C529A291AC00530138 /* GoogleService-Info.plist in Resources */,
 				BC72B609296B9F5E00277CCB /* Assets.xcassets in Resources */,
+				BCF4B6B829AEC7B60008014C /* Splash.storyboard in Resources */,
 				BCBCB1C329A28F1D00530138 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +395,8 @@
 				BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */,
 				BC4A1AA4299D88C4006BFC05 /* PreviewView.swift in Sources */,
 				BCB5DDC52996A05100A03BAE /* FrameView.swift in Sources */,
+				BCF4B6BA29AEC8350008014C /* SplashViewController.swift in Sources */,
+				BCF4B6BC29AED4740008014C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
@@ -553,10 +566,9 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need access to photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
@@ -588,10 +601,9 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need access to photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

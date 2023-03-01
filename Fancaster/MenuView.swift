@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct MenuView: View {
     
@@ -135,27 +136,40 @@ ZStack{
                             .font(.system(size:36))
                     }
                     
-                HStack{
-ZStack{
-                                             Circle()
-                                                 .fill(Color("blue_header_bg_dark"))
-                                                
-                                                 .frame(width: 80, height:80,  alignment: .topLeading)
-                                             Image(systemName: "rectangle.portrait.and.arrow.forward")
+               
+                NavigationLink(destination :LoginView()){
+                    
+                    Button(action: {
+                        print("SignoutUser :Clicked")
+                        try! Auth.auth().signOut()
+                                       
+                                       UserDefaults.standard.set(false, forKey: "status")
+                                       
+                                       NotificationCenter.default.post(name: NSNotification.Name("statusChange"), object: nil)
+                    }){
+                        HStack{
+        ZStack{
+                                                     Circle()
+                                                         .fill(Color("blue_header_bg_dark"))
+                                                        
+                                                         .frame(width: 80, height:80,  alignment: .topLeading)
+                                                     Image(systemName: "rectangle.portrait.and.arrow.forward")
 
-                                                 .resizable()
-                                                 .frame(width: 35, height :45,  alignment: .leading)
-                                                 .foregroundColor(.white)
-                    
-                                         }
-                    
-                    
-                                  
-                    
-                    Text("Logout")
-                        .bold()
-                        .foregroundColor(.white)
-                        .font(.system(size:36))
+                                                         .resizable()
+                                                         .frame(width: 35, height :45,  alignment: .leading)
+                                                         .foregroundColor(.white)
+                            
+                                                 }
+                            
+                            
+                                          
+                            
+                            Text("Logout")
+                                .bold()
+                                .foregroundColor(.white)
+                                .font(.system(size:36))
+                        }
+                    }
                 }
                     
                     

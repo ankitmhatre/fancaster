@@ -103,7 +103,7 @@ struct WaitingForConnection: View {
                         ZStack{
                             
                             NavigationLink(  destination:
-                                                        storyboardview().edgesIgnoringSafeArea(.all)){
+                                                startRecordingStoryboardView().edgesIgnoringSafeArea(.all)){
                             Image("blue_circle")
                                 .resizable()
                                 .frame(width: 220, height: 220)

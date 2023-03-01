@@ -8,7 +8,12 @@
 import SwiftUI
 import UIKit
 
+import FirebaseAuth
+
+
 struct ContentView: View {
+    
+    @State private var userLoggedIn:Bool = false
     
     
 //    let backgroundGradient = LinearGradient(
@@ -17,15 +22,39 @@ struct ContentView: View {
 //
     
     
-    var body: some View {
-   
-          NavigationView {
-              LoginView()
 
-          }
+    
+  
+    
+    
+    
+    
+    var body: some View {
+        let handle = Auth.auth().addStateDidChangeListener { auth, user in
+            
+            print("addStateChangeLKister")
+            print(user)
+            
+            if user != nil   {
+                userLoggedIn = true
+            }else{
+                userLoggedIn = false
+            }
+        }
+        
+    
+        NavigationView {
+            
+            if self.userLoggedIn {
+                    HomeView()
+            } else {
+                LoginView()
+                 }
+                
+            }
+        
          
-         
-      }
+    }
 }
     struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -35,16 +64,38 @@ struct ContentView: View {
     }
 
 
-struct storyboardview: UIViewControllerRepresentable{
+struct startRecordingStoryboardView: UIViewControllerRepresentable{
     
     
     func makeUIViewController(context content: Context) ->  UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let controller = storyboard.instantiateViewController(identifier  : "Home")
+        let controller = storyboard.instantiateViewController(identifier  : "Record")
         return controller
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
     }
     
+}
+
+
+extension View {
+    func onViewDidLoad(perform action: (() -> Void)? = nil) -> some View {
+        self.modifier(ViewDidLoadModifier(action: action))
+    }
+}
+
+struct ViewDidLoadModifier: ViewModifier {
+    @State private var viewDidLoad = false
+    let action: (() -> Void)?
+    
+    func body(content: Content) -> some View {
+        content
+            .onAppear {
+                if viewDidLoad == false {
+                    viewDidLoad = true
+                    action?()
+                }
+            }
+    }
 }
