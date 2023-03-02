@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SignUpView: View {
-    @State private var f_name: String = ""
-    @State private var l_name: String = ""
-    @State private var email: String = ""
-    @State private var phoneNumber: String = ""
+    
+    @StateObject var viewModel = SignUpViewModel()
+    
+    @State private var phoneNumber = "+19173196399"
+    
     var body: some View {
      
         ZStack{
@@ -32,91 +34,13 @@ struct SignUpView: View {
                     .padding([.horizontal], 70)
                 
                 
-                //SIgnup up view
-                
-                TextField(
-                    "First Name",
-                    text: $f_name
-                )
-                .keyboardType(.phonePad)
-                .submitLabel(.return)
-                .frame(height: 55)
-                .textFieldStyle(PlainTextFieldStyle()).foregroundColor(.black)
-                .italic()
-                
-                .padding([.horizontal], 36)
-                .background(.white)
-                .cornerRadius(50)
-                .padding([.horizontal], 56)
-               
-                
-             
-                
-                .onSubmit {
-                    //                    validate(name: username)
-                    print("onbSubmit")
-                }
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
-                
-                
-                
-                TextField(
-                    "Last Name",
-                    text: $l_name
-                )
-                .keyboardType(.phonePad)
-                .submitLabel(.return)
-                .frame(height: 55)
-                .textFieldStyle(PlainTextFieldStyle()).foregroundColor(.black)
-                .italic()
-                
-                .padding([.horizontal], 36)
-                .background(.white)
-                .cornerRadius(50)
-                .padding([.horizontal], 56)
-               
-                
-             
-                
-                .onSubmit {
-                    //                    validate(name: username)
-                    print("onbSubmit")
-                }
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
-                
-                
-                
-                TextField(
-                    "Email",
-                    text: $email
-                )
-                .keyboardType(.phonePad)
-                .submitLabel(.return)
-                .frame(height: 55)
-                .textFieldStyle(PlainTextFieldStyle()).foregroundColor(.black)
-                .italic()
-                
-                .padding([.horizontal], 36)
-                .background(.white)
-                .cornerRadius(50)
-                .padding([.horizontal], 56)
-               
-                
-             
-                
-                .onSubmit {
-                    //                    validate(name: username)
-                    print("onbSubmit")
-                }
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
+  
+              
                 
                 
                 TextField(
                     "Phone Number",
-                    text: $phoneNumber
+                    text: $viewModel.phoneNumber
                 )
                 .keyboardType(.phonePad)
                 .submitLabel(.return)
@@ -141,11 +65,28 @@ struct SignUpView: View {
                 .disableAutocorrection(true)
                 
                 
-                
-                
-  Button(action: {
-  print("Clicked")
-  }){
+                NavigationLink(destination: OtpView().onAppear{
+                    let credentials =      PhoneAuthProvider.provider()
+                        .verifyPhoneNumber(self.phoneNumber, uiDelegate: nil) { verificationID, error in
+                            if let error = error {
+                                
+                                //                                                              self.msg = error.localizedDescription
+                                //                                                              self.alert.toggle()
+                                //                                                            print(error.localizedDescription)
+                                
+                                return
+                            }
+                            print("Verification ID")
+                            print(verificationID)
+                            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+                            //NavigationLink(destination: OtpView())
+                            
+                            // Sign in using the verificationID and the code sent to the user
+                            // ...
+                            return
+                        }
+                    
+                }){
       
       
               Text("SIGNUP")
@@ -159,15 +100,6 @@ struct SignUpView: View {
          // If you have this
           .cornerRadius(50)
  
-
-        
-                
-                
-                
-          
-                
-           
-                
                     .padding([.horizontal], 56)
             }
             

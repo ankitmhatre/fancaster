@@ -24,6 +24,13 @@ struct WaitingForConnection: View {
         
         ZStack{
             
+            Image("header_home")
+                    .resizable()
+                   
+                    .scaledToFill()
+                
+                    .ignoresSafeArea()
+                
             
 
             VStack(alignment: .leading){
@@ -90,7 +97,7 @@ struct WaitingForConnection: View {
                     )
                 
                     .frame(width: 500, height: 500)
-                    .offset(y: 350)
+                    .offset(y: 450)
                 
                 VStack{
                     
@@ -106,25 +113,26 @@ struct WaitingForConnection: View {
                                                 startRecordingStoryboardView().edgesIgnoringSafeArea(.all)){
                             Image("blue_circle")
                                 .resizable()
-                                .frame(width: 220, height: 220)
+                                .frame(width: 170, height: 170)
                             }
                             //   storyboardview().edgesIgnoringSafeArea(.all)
                                 Image("camera_action_plate")
                                 .resizable()
-                                .frame(width: 120, height: 100)
+                                .frame(width: 80, height: 80)
                             
                             
                        
                        
                     } .offset(y:-270)
                     Text("Your broadcast will start shortly...")
-                        .font(.system(size: 36))
-                        
+                        .font(.system(size: 24))
+                        .frame(width: 250, height: 220)
+                        .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                         .fontWeight(.black)
-                        .offset(y:-200)
+                        .offset(y:-350)
                 }
-                .offset(y: 500)
+                .offset(y: 600)
                 
                 
             }

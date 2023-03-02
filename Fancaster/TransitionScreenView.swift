@@ -49,7 +49,12 @@ struct TransitionScreenView: View {
                 Image("transition_logo_icon")
                     .imageScale(.large)
                 
-            }}
+            }
+       
+            
+            
+            
+        }
         
         
         

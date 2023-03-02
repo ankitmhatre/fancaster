@@ -17,6 +17,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOD-qV-bPs" customClass="PreviewView" customModule="Fancaster" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="87" width="414" height="736"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_header" translatesAutoresizingMaskIntoConstraints="NO" id="Xod-Jl-BS2">
+                                        <rect key="frame" x="8" y="672" width="120" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" secondItem="WOD-qV-bPs" secondAttribute="width" multiplier="16:9" id="hFe-b4-Urr"/>
                                 </constraints>
@@ -150,4 +156,7 @@
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="login_header" width="149" height="149"/>
+    </resources>
 </document>

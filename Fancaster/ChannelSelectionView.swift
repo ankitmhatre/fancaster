@@ -25,7 +25,9 @@ struct ChannelSelectionView: View {
 
             VStack(alignment: .leading){
                 
-                HStack{
+         //       NavigationLink{ destination :
+                    
+                 HStack{
                     ZStack{
                         Circle()
                             .fill(.black)
@@ -41,6 +43,7 @@ struct ChannelSelectionView: View {
                         .fontWeight(.black)
                     
                 }
+                //}
                 
                 
                 Text("Select where to broadcast")
@@ -97,9 +100,7 @@ struct ChannelSelectionView: View {
                     
                     
                     
-                    NavigationLink(  destination:
-                                        
-                                        WaitingForConnection() ){
+                    NavigationLink(  destination: WaitingForConnection() ){
                         ZStack{
                             
                             Image("yellow_circle")
@@ -121,6 +122,7 @@ struct ChannelSelectionView: View {
                         }
                         .offset(y:-50)
                     }
+                                 
                     Text("Go Live !")
                         .font(.system(size: 36))
                         .foregroundColor(.white)

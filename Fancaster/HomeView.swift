@@ -37,7 +37,7 @@ struct HomeView: View {
                                 .resizable()
                                 .frame(width: 40, height :40,  alignment: .leading)
                         }
-                        .navigationBarBackButtonHidden(true)
+                     
                         
                     }
                     .offset(x:220)
@@ -100,7 +100,7 @@ struct HomeView: View {
                     
                     
                 }
-                .navigationBarBackButtonHidden(true)
+         
                 VStack{
                     ZStack{
                         
@@ -109,7 +109,7 @@ struct HomeView: View {
                             .frame(width: 120, height: 120)
                         
                         //   storyboardview().edgesIgnoringSafeArea(.all)
-                        Image("")
+                        Image("camera_action_plate")
                             .resizable()
                             .frame(width: 70, height: 60)
                         
