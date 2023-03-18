@@ -21,14 +21,7 @@ struct ContentView: View {
 //        startPoint: .top, endPoint: .bottom)
 //
     
-    
 
-    
-  
-    
-    
-    
-    
     var body: some View {
         let handle = Auth.auth().addStateDidChangeListener { auth, user in
             
@@ -43,7 +36,7 @@ struct ContentView: View {
         }
         
     
-        NavigationView {
+        
             
             if self.userLoggedIn {
                     HomeView()
@@ -51,7 +44,7 @@ struct ContentView: View {
                 LoginView()
                  }
                 
-            }
+            
         
          
     }

@@ -10,7 +10,8 @@ import FirebaseAuth
 
 struct MenuView: View {
     
-    
+    @Environment(\.presentationMode) var presentationMode
+   
     
     
     
@@ -33,16 +34,21 @@ struct MenuView: View {
                     
                 
                 HStack{
-ZStack{
-                                             Circle()
-                                                 .fill(Color("blue_header_bg_dark"))
-                                                
-                                                 .frame(width: 80, height:80,  alignment: .topLeading)
-                                             Image("close_icon")
-                                                 .resizable()
-                                                 .frame(width: 45, height :40,  alignment: .leading)
                     
-                                         }
+                    ZStack{
+                        Circle()
+                            .fill(Color("blue_header_bg_dark"))
+                        
+                            .frame(width: 80, height:80,  alignment: .topLeading)
+                        
+                        Button(action:{ self.presentationMode.wrappedValue.dismiss() }){
+                            
+                            Image("close_icon")
+                                .resizable()
+                                .frame(width: 45, height :40,  alignment: .leading)
+                            
+                        }
+                    }
                     
                     
                                   

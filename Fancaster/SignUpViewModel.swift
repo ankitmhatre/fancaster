@@ -36,6 +36,7 @@ class SignUpViewModel: ObservableObject {
     @Published  var email: String = ""
     @Published  var phoneNumber: String = ""
     
+    @Published  var countryCode = "+1"
 
     @Published var isTextFieldDisabled = false
 

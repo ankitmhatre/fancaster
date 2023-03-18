@@ -12,7 +12,7 @@ struct SignUpView: View {
     
     @StateObject var viewModel = SignUpViewModel()
     
-    @State private var phoneNumber = "+19173196399"
+    
     
     var body: some View {
      
@@ -38,10 +38,25 @@ struct SignUpView: View {
               
                 
                 
+              
+                
+                
+                HStack{
+                    
+                 TextField(
+                    "+1",
+                    text: $viewModel.countryCode
+                )
+                 .frame(width:30)
+                
+                    Divider()
                 TextField(
-                    "Phone Number",
+                    "Phone number",
                     text: $viewModel.phoneNumber
                 )
+                    
+            }
+                .font(Font.system(size: 14, design: .default))
                 .keyboardType(.phonePad)
                 .submitLabel(.return)
                 .frame(height: 55)
@@ -67,7 +82,7 @@ struct SignUpView: View {
                 
                 NavigationLink(destination: OtpView().onAppear{
                     let credentials =      PhoneAuthProvider.provider()
-                        .verifyPhoneNumber(self.phoneNumber, uiDelegate: nil) { verificationID, error in
+                        .verifyPhoneNumber(viewModel.countryCode + viewModel.phoneNumber, uiDelegate: nil) { verificationID, error in
                             if let error = error {
                                 
                                 //                                                              self.msg = error.localizedDescription

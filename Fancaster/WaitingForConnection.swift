@@ -12,6 +12,11 @@ import SwiftUI
 
 
 struct WaitingForConnection: View {
+    
+    
+    
+    @Environment(\.presentationMode) var presentationMode
+   
     let backgroundGradient =  LinearGradient(gradient: Gradient(colors: [Color("blue_header_bg_light"), Color("blue_header_bg_dark")]), startPoint: .top, endPoint: .bottom)
     
     @State private var isOn = false
@@ -23,15 +28,17 @@ struct WaitingForConnection: View {
         
         
         ZStack{
+           
+                
+           
             
             Image("header_home")
                     .resizable()
-                   
                     .scaledToFill()
-                
                     .ignoresSafeArea()
+                    
                 
-            
+           
 
             VStack(alignment: .leading){
                 
@@ -41,11 +48,14 @@ struct WaitingForConnection: View {
                             .fill(.black)
                             .opacity(0.2)
                             .frame(width: 60, height:60,  alignment: .topLeading)
-                        Image("arrow_back")
-                            .resizable()
-         
-                            .frame(width: 25, height :40,  alignment: .leading)
+                        Button(action:{ self.presentationMode.wrappedValue.dismiss() }){
+                            Image("arrow_back")
+                                .resizable()
+                            
+                                .frame(width: 25, height :40,  alignment: .leading)
+                        }
                     }
+                 
           
                     
                 }
@@ -116,11 +126,14 @@ struct WaitingForConnection: View {
                                 .frame(width: 170, height: 170)
                             }
                             //   storyboardview().edgesIgnoringSafeArea(.all)
+                            
+                            NavigationLink(  destination:
+                                                startRecordingStoryboardView().edgesIgnoringSafeArea(.all)){
                                 Image("camera_action_plate")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                            
-                            
+                                    .resizable()
+                                    .frame(width: 80, height: 80)
+                                
+                            }
                        
                        
                     } .offset(y:-270)
@@ -137,7 +150,7 @@ struct WaitingForConnection: View {
                 
             }
             
-            .padding([.horizontal], -40)
+            
         }
         
     }

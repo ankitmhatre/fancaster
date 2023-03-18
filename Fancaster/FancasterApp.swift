@@ -24,7 +24,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
      func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
        print("\(#function)")
-       Auth.auth().setAPNSToken(deviceToken, type: .sandbox)
+         Auth.auth().setAPNSToken(deviceToken, type: .prod)
      }
      
      func application(_ application: UIApplication, didReceiveRemoteNotification notification: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {

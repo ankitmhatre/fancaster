@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC330F1129C61903005334FD /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC330F1029C61903005334FD /* CheckBoxView.swift */; };
 		BC34831C29A57565005DA547 /* TransitionScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34831B29A57565005DA547 /* TransitionScreenView.swift */; };
 		BC4A1AA1299D88C4006BFC05 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9B299D88C3006BFC05 /* Utilities.swift */; };
 		BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1A9C299D88C3006BFC05 /* PiPMixer.metal */; };
@@ -22,6 +23,7 @@
 		BC72B620296B9F5F00277CCB /* FancasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B61F296B9F5F00277CCB /* FancasterUITests.swift */; };
 		BC72B622296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */; };
 		BC72B62F296BD0E600277CCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72B62E296BD0E600277CCB /* LoginView.swift */; };
+		BC77223829C4C86D0056886F /* Fancaster_prov.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = BC77223729C4C86C0056886F /* Fancaster_prov.mobileprovision */; };
 		BCB5DDC52996A05100A03BAE /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB5DDC42996A05100A03BAE /* FrameView.swift */; };
 		BCB8F60429B0EEB900E1D353 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F60329B0EEB900E1D353 /* SignUpViewModel.swift */; };
 		BCBCB1C329A28F1D00530138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4A1AAB299D8A0B006BFC05 /* Main.storyboard */; };
@@ -67,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC330F1029C61903005334FD /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		BC34831B29A57565005DA547 /* TransitionScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionScreenView.swift; sourceTree = "<group>"; };
 		BC4A1A96299D8134006BFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC4A1A9B299D88C3006BFC05 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		BC72B61F296B9F5F00277CCB /* FancasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterUITests.swift; sourceTree = "<group>"; };
 		BC72B621296B9F5F00277CCB /* FancasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BC72B62E296BD0E600277CCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BC77223729C4C86C0056886F /* Fancaster_prov.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fancaster_prov.mobileprovision; sourceTree = "<group>"; };
 		BCB5DDC42996A05100A03BAE /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		BCB8F60329B0EEB900E1D353 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		BCBCB1C429A291AB00530138 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		BC72B5F8296B9F5B00277CCB = {
 			isa = PBXGroup;
 			children = (
+				BC77223729C4C86C0056886F /* Fancaster_prov.mobileprovision */,
 				BCB5DDC42996A05100A03BAE /* FrameView.swift */,
 				BC72B603296B9F5B00277CCB /* Fancaster */,
 				BC72B614296B9F5E00277CCB /* FancasterTests */,
@@ -201,6 +206,7 @@
 				BCF4B6B929AEC8350008014C /* SplashViewController.swift */,
 				BCF4B6BB29AED4740008014C /* User.swift */,
 				BCB8F60329B0EEB900E1D353 /* SignUpViewModel.swift */,
+				BC330F1029C61903005334FD /* CheckBoxView.swift */,
 			);
 			path = Fancaster;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC77223829C4C86D0056886F /* Fancaster_prov.mobileprovision in Resources */,
 				BC72B60C296B9F5E00277CCB /* Preview Assets.xcassets in Resources */,
 				BCBCB1C529A291AC00530138 /* GoogleService-Info.plist in Resources */,
 				BC72B609296B9F5E00277CCB /* Assets.xcassets in Resources */,
@@ -398,6 +405,7 @@
 				BCB8F60429B0EEB900E1D353 /* SignUpViewModel.swift in Sources */,
 				BC4A1AA2299D88C4006BFC05 /* PiPMixer.metal in Sources */,
 				BC4A1AA4299D88C4006BFC05 /* PreviewView.swift in Sources */,
+				BC330F1129C61903005334FD /* CheckBoxView.swift in Sources */,
 				BCB5DDC52996A05100A03BAE /* FrameView.swift in Sources */,
 				BCF4B6BA29AEC8350008014C /* SplashViewController.swift in Sources */,
 				BCF4B6BC29AED4740008014C /* User.swift in Sources */,
@@ -558,13 +566,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fancaster/Preview Content\"";
-				DEVELOPMENT_TEAM = 2X8VP8NDHU;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2X8VP8NDHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fancaster/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to test";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Microphone ";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need access to photo library";
@@ -573,13 +585,16 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = Splash.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5;
+				MARKETING_VERSION = 8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chetandavdra.fancaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Fancaster_prov;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,13 +608,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Fancaster/Fancaster.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fancaster/Preview Content\"";
-				DEVELOPMENT_TEAM = 2X8VP8NDHU;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2X8VP8NDHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fancaster/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to test";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Microphone ";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need access to photo library";
@@ -608,13 +627,16 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = Splash.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5;
+				MARKETING_VERSION = 8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chetandavdra.fancaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Fancaster_prov;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
